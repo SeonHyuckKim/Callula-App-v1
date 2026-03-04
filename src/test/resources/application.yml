@@ -1,0 +1,26 @@
+spring:
+    datasource:
+        url: jdbc:h2:mem:test
+        username: sa
+        password:
+        driver-class-name: org.h2.Driver
+
+    jpa:
+        hibernate:
+            ddl-auto: update
+        show-sql: true
+        properties:
+            hibernate:
+                format_sql: true
+
+
+http-client:
+    connect-timeout: 10
+    read-timeout: 30
+    write-timeout: 30
+    max-idle-connections: 5
+    keep-alive-duration: 5
+    retry-on-connection-failure: true
+    logging-level: BASIC
+
+
